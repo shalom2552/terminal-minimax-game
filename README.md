@@ -49,8 +49,10 @@ This project uses GNU Make for compilation.
 * **Winning:** The player with the highest score at the end of the game wins.
 
 ## Screenshots
-
+<img width="692" height="505" alt="Screenshot from 2026-02-03 23-10-38" src="https://github.com/user-attachments/assets/d4cc0005-6d1c-4fb8-ae65-ebcc3ffd162f" />
+<img width="563" height="700" alt="Screenshot from 2026-02-03 23-11-19" src="https://github.com/user-attachments/assets/3297b659-5006-4053-8392-9817851b1d9c" />
 
 ## Author
 
 **shalom2552**
+
