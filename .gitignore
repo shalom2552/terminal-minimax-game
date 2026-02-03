@@ -1,0 +1,7 @@
+# Prerequisites
+*.d
+*.ccls-cache
+*.swp
+
+# Object files
+*.o
