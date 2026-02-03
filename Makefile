@@ -1,18 +1,31 @@
-CFLAGS = -std=c99 -Wall -Wextra -pedantic -g
+# Compiler and Flags
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -g -Iinclude
+# The -Iinclude flag tells gcc to look in the 'include' folder!
 
-TARGET = game
+# Directories
+SRC_DIR = src
+OBJ_DIR = obj
+BIN = game
 
-SRC = main.c game_display.c game_logic.c game_random.c
-SRC += game_input.c game_ai.c game_menu.c game_main_menu.c
+# Source and Object files
+SRCS = $(wildcard $(SRC_DIR)/*.c)
+OBJS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
 
-OBJECTS = $(SRC:.c=.o)
+# Default Target
+all: $(BIN)
 
-all: $(TARGET)
+# Link
+$(BIN): $(OBJS)
+	$(CC) $(CFLAGS) $^ -o $@ -lm
 
-$(TARGET): $(OBJECTS)
-	gcc $(CFLAGS) -o $(TARGET) $(OBJECTS) -lm
+# Compile
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	@mkdir -p $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
 
+# Clean
 clean:
-	rm -f  $(OBJECTS) $(TARGET)
+	rm -rf $(OBJ_DIR) $(BIN)
 
 .PHONY: all clean
