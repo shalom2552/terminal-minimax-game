@@ -26,15 +26,15 @@ The game ends when the board is full or a player is blocked from making a move. 
 This project uses GNU Make for compilation.
 
 1.  Clone the repository:
+    ```
     git clone https://github.com/shalom2552/terminal-minimax-game.git
     cd terminal-minimax-game
-
-2.  Compile the source code:
+3.  Compile the source code:
+    ```
     make
-
-3.  Run the executable:
+4.  Run the executable:
+    ```
     ./game
-
 ## Controls
 
 * **Arrow Keys:** Move the cursor left or right within the active row/column.
@@ -49,8 +49,21 @@ This project uses GNU Make for compilation.
 * **Winning:** The player with the highest score at the end of the game wins.
 
 ## Screenshots
-<img width="692" height="505" alt="Screenshot from 2026-02-03 23-10-38" src="https://github.com/user-attachments/assets/d4cc0005-6d1c-4fb8-ae65-ebcc3ffd162f" />
-<img width="563" height="700" alt="Screenshot from 2026-02-03 23-11-19" src="https://github.com/user-attachments/assets/3297b659-5006-4053-8392-9817851b1d9c" />
+
+<div align="center">
+  <table>
+    <tr>
+      <td valign="top" width="50%">
+        <h3 align="center">Main Menu</h3>
+        <img src="https://github.com/user-attachments/assets/d4cc0005-6d1c-4fb8-ae65-ebcc3ffd162f" width="100%" alt="Main Menu" />
+      </td>
+      <td valign="top" width="50%">
+        <h3 align="center">Gameplay</h3>
+        <img src="https://github.com/user-attachments/assets/3297b659-5006-4053-8392-9817851b1d9c" width="100%" alt="Gameplay Grid" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## Author
 
