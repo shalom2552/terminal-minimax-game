@@ -5,3 +5,6 @@
 
 # Object files
 *.o
+
+# Game file
+game
