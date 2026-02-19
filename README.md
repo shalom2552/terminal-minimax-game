@@ -2,6 +2,23 @@
 
 A turn-based strategy game written in C, played directly in the terminal. The human player competes against an AI on a 10x10 numeric grid, where every move restricts the opponent's next available options.
 
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td valign="top" width="50%">
+        <h3 align="center">Main Menu</h3>
+        <img src="https://github.com/user-attachments/assets/d4cc0005-6d1c-4fb8-ae65-ebcc3ffd162f" width="100%" alt="Main Menu" />
+      </td>
+      <td valign="top" width="50%">
+        <h3 align="center">Gameplay</h3>
+        <img src="https://github.com/user-attachments/assets/3297b659-5006-4053-8392-9817851b1d9c" width="100%" alt="Gameplay Grid" />
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## Overview
 
 The game takes place on a grid populated with integers generated using a Gaussian (Normal) distribution. This ensures a challenging board layout with a mix of positive and negative values centered around a mean.
@@ -47,23 +64,6 @@ This project uses GNU Make for compilation.
 * **Scoring:** When a cell is picked, its value is added to the player's total score.
 * **Blocking:** If a player has no valid moves remaining in their active row or column, the game ends immediately, and the blocked player receives a 200-point penalty.
 * **Winning:** The player with the highest score at the end of the game wins.
-
-## Screenshots
-
-<div align="center">
-  <table>
-    <tr>
-      <td valign="top" width="50%">
-        <h3 align="center">Main Menu</h3>
-        <img src="https://github.com/user-attachments/assets/d4cc0005-6d1c-4fb8-ae65-ebcc3ffd162f" width="100%" alt="Main Menu" />
-      </td>
-      <td valign="top" width="50%">
-        <h3 align="center">Gameplay</h3>
-        <img src="https://github.com/user-attachments/assets/3297b659-5006-4053-8392-9817851b1d9c" width="100%" alt="Gameplay Grid" />
-      </td>
-    </tr>
-  </table>
-</div>
 
 ## Author
 
